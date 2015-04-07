@@ -69,8 +69,11 @@ test('Should welcome me to Amber Pet', function(assert) {
   });
 });
 
-test('Should list all the pets m', function(assert) {
+
+test('Should list all pets', function(assert) {
   visit('/').then(function() {
-    assert.equal(find('h2#title').text(), 'Welcome to Amber Pet');
+    assert.equal(find('a:contains("Bugs Bunny")').length, 1);
+    assert.equal(find('a:contains("Wile E. Coyote")').length, 1);
+    assert.equal(find('a:contains("Yosemite Sam")').length, 1);
   });
 });
