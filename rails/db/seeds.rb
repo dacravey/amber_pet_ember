@@ -16,3 +16,5 @@ User.create([
   { username: 'Person1', firstname: "Sparky", lastname: "Gronaldo", address: "237 S. PetOwner Dr", phone: "47392897", email: 'person1@personmail.com', password:'password' },
   { username: 'Person2', firstname: "Fluffy", lastname: "Iglesias", address: "247 W. PetOwner Ave", phone: "30283492", email: 'person2@personmail.com' },
 ])
+
+Message.create([ to: "6024890731", body: "I found your pet!", from: "4802073339" ])
