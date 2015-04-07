@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import { module, test } from 'qunit';
+import { module, test, skip } from 'qunit';
 import startApp from '../helpers/start-app';
 import Pretender from 'pretender';
 
@@ -71,9 +71,9 @@ test('Should welcome me to Amber Pet', function(assert) {
 
 
 test('Should list all pets', function(assert) {
-  visit('/').then(function() {
+  visit('/pets').then(function() {
     assert.equal(find('a:contains("Bugs Bunny")').length, 1);
-    assert.equal(find('a:contains("Wile E. Coyote")').length, 1);
-    assert.equal(find('a:contains("Yosemite Sam")').length, 1);
+    assert.equal(find('a:contains("Fido")').length, 1);
+    assert.equal(find('a:contains("Joel")').length, 1);
   });
 });
