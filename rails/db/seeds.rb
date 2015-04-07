@@ -7,12 +7,12 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Pet.create([
-  { name: "Sparky", description: "Large hound dog", age: "5 years old", breed: "Hound", chip_number: "47392897" },
-  { name: "Fluffy", description: "Small poodle", age: "2 years old", breed: "Poodle", chip_number: "32047230" },
-  { name: "Whiskers", description: "Cute calico cat", age: "4 years old", breed: "Calico", chip_number: "345345" },
+  { name: "Sparky", description: "Large hound dog", age: 5, breed: "Hound", chip_number: "47392897", user_id: 3 },
+  { name: "Fluffy", description: "Small poodle", age: 5, breed: "Poodle", chip_number: "32047230", user_id: 3 },
+  { name: "Whiskers", description: "Cute calico cat", age: 5, breed: "Calico", chip_number: "345345", user_id: 4 },
 ])
-
-User.create([
-  { firstname: "Sparky", lastname: "Gronaldo", address: "237 S. PetOwner Dr", phone: "47392897" },
-  { firstname: "Fluffy", lastname: "Iglesias", address: "247 W. PetOwner Ave", phone: "30283492" },
-])
+#
+# User.create([
+#   { firstname: "Sparky", lastname: "Gronaldo", address: "237 S. PetOwner Dr", phone: "47392897" },
+#   { firstname: "Fluffy", lastname: "Iglesias", address: "247 W. PetOwner Ave", phone: "30283492" },
+# ])
