@@ -13,5 +13,4 @@ class Api::PetsController < ApplicationController
   def destroy
   end
 
-  def
 end
