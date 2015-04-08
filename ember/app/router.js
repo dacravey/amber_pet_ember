@@ -8,5 +8,6 @@ var Router = Ember.Router.extend({
 export default Router.map(function() {
   this.resource('pets', function() {
     this.route('show', {path: ':pet_id'});
+    this.route('new', {path: 'new'});
   });
 });
