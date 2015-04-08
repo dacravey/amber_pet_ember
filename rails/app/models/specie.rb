@@ -1,4 +1,4 @@
 class Specie <ActiveRecord::Base
-  validates :specie, :presence => true
+  validates :name, :presence => true
   has_many :pets
 end
