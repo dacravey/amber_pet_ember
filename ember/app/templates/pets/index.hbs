@@ -1,5 +1,7 @@
-<h1>Pets:</h1>
+<h2>Lost Pets</h2>
+<h3>Give a hand!</h3>
+
 
 {{#each}}
-{{link-to name 'pets.show' this}}
+  <div class="col-md-2 pet-icons">{{link-to name 'pets.show' this}}</div>
 {{/each}}
