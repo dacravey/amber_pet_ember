@@ -65,7 +65,7 @@ module('Integration - Landing Page', {
 
 test('Should welcome me to Amber Pet', function(assert) {
   visit('/').then(function() {
-    assert.equal(find('a:contains("Amber Pet")').text());
+    assert.equal(find('h2#title').text(), 'Amber Pet');
   });
 });
 
