@@ -1,7 +1,7 @@
 class Api::PetsController < ApplicationController
 
   def new
-    @pet = Pet.all
+    @pet = Pet.new
   end
 
   def index
