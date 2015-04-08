@@ -1,6 +1,15 @@
-<h2 id="title">Welcome to Amber Pet</h2>
-{{link-to 'Pets' 'pets'}}
-{{link-to 'New' 'pets.new'}}
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Amber Pet</a>
+    </div>
+      <ul class="nav navbar-nav">
+      <li>{{link-to 'Pets' 'pets'}}</li>
+      <li>{{link-to 'New' 'pets.new'}}</li>
+    </ul>
+  </div>
+</nav>
+
 
 <div class="container">
   {{outlet}}
