@@ -1,5 +1,5 @@
 class Api::PetsController < ApplicationController
-
+  skip_before_filter  :verify_authenticity_token
   def new
     @pet = Pet.new
   end
@@ -29,10 +29,9 @@ class Api::PetsController < ApplicationController
   def create
     @pet = Pet.new(pet_params)
     if @pet.save
-      flash[:notice] = @pet.name + ' added to list.'
-      redirect_to api_pets_path
+      render json: @pet, status: :created, location: @pet
     else
-      render :new
+      render json: @pet.errors, status: :unprocessable_entity
     end
   end
 
