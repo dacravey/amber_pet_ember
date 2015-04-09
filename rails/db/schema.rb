@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
 ActiveRecord::Schema.define(version: 20150409170334) do
 
   # These are extensions that must be enabled in order to support this database
@@ -37,17 +38,14 @@ ActiveRecord::Schema.define(version: 20150409170334) do
   end
 
   create_table "pets", force: :cascade do |t|
-    t.string   "name"
-    t.text     "description"
-    t.integer  "age"
-    t.string   "breed"
-    t.integer  "user_id"
-    t.string   "chip_number"
-    t.string   "avatar_file_name"
-    t.string   "avatar_content_type"
-    t.integer  "avatar_file_size"
-    t.datetime "avatar_updated_at"
-    t.integer  "specie_id"
+    t.string  "name"
+    t.text    "description"
+    t.integer "age"
+    t.string  "breed"
+    t.integer "user_id"
+    t.string  "chip_number"
+    t.integer "specie_id"
+    t.string  "picture"
   end
 
   create_table "species", force: :cascade do |t|
