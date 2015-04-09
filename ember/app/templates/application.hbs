@@ -16,7 +16,11 @@
           <a href="#">Register</a>
         </li>
         <li>
-          <a href="#">Login/Logout</a>
+          {{#if session.isAuthenticated}}
+            <button {{ action 'invalidateSession' }}>Logout</button>
+          {{else}}
+            {{#link-to 'pets'}}Login{{/link-to}}
+          {{/if}}
         </li>
         <li>
           {{link-to 'Pets' 'pets.index'}}
