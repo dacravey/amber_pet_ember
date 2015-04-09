@@ -27,25 +27,24 @@ class Api::UsersController < ApplicationController
     end
   end
 
-      def create
-        @user = User.new(user_params)
-        if @user.save
-          flash[:notice] = @user.name + ' added to list.'
-          redirect_to api_users_path
-        else
-          render :new
-        end
-      end
-
-      def destroy
-        @user = User.find(params[:id])
-        @user.destroy
-        redirect_to api_users_path
-      end
-
-      private
-      def user_params
-        params.require(:user).permit(:firstname, :lastname, :username, :address, :phone, :email )
-      end
-
+  def create
+    @user = User.new(user_params)
+    if @user.save
+      render json: @user, status: :created, location: @user
+    else
+      render json: @user.errors, status: :unprocessable_entity
     end
+  end
+
+
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+    redirect_to api_users_path
+  end
+
+private
+  def user_params
+    params.require(:user).permit(:firstname, :lastname, :username, :address, :phone, :email, :password, :password_confirmation, :authentication_token )
+  end
+end

@@ -1,0 +1,38 @@
+<h2>Add a user:</h2>
+<br />
+
+<form>
+  <div class='form-group'>
+    <label for='username'>User name:</label>
+    {{input username='username' value=model.username type='text' placeholder='User Name' class='form-control'}}
+  </div>
+  <div class='form-group'>
+    <label for='firstname'>First name:</label>
+    {{input firstname='firstname' value=model.firstname type='text' placeholder='First Name' class='form-control'}}
+  </div>
+  <div class='form-group'>
+    <label for='lastname'>Last name:</label>
+    {{input lastname='lastname' value=model.lastname type='text' placeholder='Last Name' class='form-control'}}
+  </div>
+  <div class='form-group'>
+    <label for='address'>Address:</label>
+    {{input address='address' value=model.address type='text' placeholder='Address' class='form-control'}}
+  </div>
+  <div class='form-group'>
+    <label for='phone'>Phone:</label>
+    {{input phone='phone' value=model.phone type='text' placeholder='Phone' class='form-control'}}
+  </div>
+  <div class='form-group'>
+    <label for='email'>Email:</label>
+    {{input email='email' value=model.email type='text' placeholder='Email' class='form-control'}}
+  </div>
+  <div class='form-group'>
+    <label for='password'>Password:</label>
+    {{input password='password' value=model.password type='password' placeholder='Password' class='form-control'}}
+  </div>
+  <div class='form-group'>
+    <label for='password_confirmation'>Password Confirmation:</label>
+    {{input password_confirmation='password_confirmation' value=model.password_confirmation type='password' placeholder='Password_Confirmation' class='form-control'}}
+  </div>
+  <button class='btn btn-default' {{action 'createUser'}}>Submit</button>
+</form>

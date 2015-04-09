@@ -11,4 +11,10 @@ export default Router.map(function() {
     this.route('show', {path: ':pet_id'});
     this.route('new', {path: 'new'});
   });
+  this.resource('login', function() {
+    this.route('login');
+  });
+  this.resource('users', function() {
+    this.route('new');
+  });
 });
