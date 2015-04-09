@@ -7,9 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Pet.create([
-  { name: "Sparky", description: "Large hound dog", age: 5, breed: "Hound", chip_number: "47392897", user_id: 3, avatar: File.open("public/images.jpeg")},
-  { name: "Fluffy", description: "Small poodle", age: 5, breed: "Poodle", chip_number: "32047230", user_id: 3 },
-  { name: "Whiskers", description: "Cute calico cat", age: 5, breed: "Calico", chip_number: "345345", user_id: 4 },
+  { name: "Sparky", description: "Large hound dog", age: 5, breed: "BloodHound", chip_number: "47392897", user_id: 3, picture: "http://static1.vetknowledge.com/sites/default/files/styles/large/public/images/article/bloodhound-grass.jpg?itok=thDIFpVe" },
+  { name: "Fluffy", description: "Small poodle", age: 5, breed: "Poodle", chip_number: "32047230", user_id: 3, picture: "http://cdn-www.dailypuppy.com/dog-images/ralphy-the-miniature-poodle-1_68874_2012-11-22_w450.jpg" },
+  { name: "Grumpy cat!", description: "Famous grumpy cat", age: 5, breed: "Snowshoe Siamese", chip_number: "345345", user_id: 4, picture: "http://i.kinja-img.com/gawker-media/image/upload/s--XxeU3pwd--/efg4piwisx1tcco4byit.png" },
 ])
 #
 User.create([

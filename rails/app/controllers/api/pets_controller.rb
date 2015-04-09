@@ -46,7 +46,7 @@ class Api::PetsController < ApplicationController
 
 private
   def pet_params
-    params.require(:pet).permit(:name, :avatar, :age, :breed, :chip_number, :description )
+    params.require(:pet).permit(:name, :picture, :age, :breed, :chip_number, :description )
   end
 
 end
