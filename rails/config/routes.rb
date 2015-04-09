@@ -4,5 +4,5 @@ Rails.application.routes.draw do
     resources :users
     resources :messages
   end
-  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
+  devise_for :users, controllers: { sessions: 'sessions' }
 end
