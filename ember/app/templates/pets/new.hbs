@@ -2,7 +2,7 @@
 <br />
 
 <form>
-  <div class="form-group">
+  <div class="form-group" enctype="multipart/form-data">
     <label for="name">Name:</label>
     {{input name="name" value=name type="text" placeholder="Pet Name" class="form-control"}}
   </div>
@@ -22,5 +22,10 @@
     <label for="description">Description</label>
     {{input name="description" value=description type="text" class="form-control"}}
   </div>
+  <div class="form-group">
+    <label for="avatar">Pet photo</label>
+    {{input name="avatar" value=avatar type="file" class="form-control"}}
+  </div>
+
   <button class="btn btn-default" {{action 'createPet'}}>Submit</button>
 </form>
