@@ -1,0 +1,135 @@
+/*```````````````````````````````````````````````
+Global Styles
+```````````````````````````````````````````````*/
+
+html, body {
+  height:100%;
+  width:100%;
+  background-color:#221E1E;
+  color:#FFF;
+  font-family:'Oswald', sans-serif;
+}
+
+h1, h2 {
+  font-family:'Lobster', cursive;
+  font-size:3em;
+}
+
+h2 > small {
+  font-family:'Oswald', sans-serif;
+  font-size:.5em;
+}
+
+h1, h2, h3 {
+  margin:0.5em 0;
+}
+
+/*```````````````````````````````````````````````
+Navigation
+```````````````````````````````````````````````*/
+
+.navbar-inverse {
+  background-color:#221E1E;
+  background-image:none;
+  border-color:#080808;
+}
+
+.navbar-inverse .navbar-brand {
+  color:#FFF;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color:#FFF;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color:#B5B5B5;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > li > a:hover,.navbar-inverse .navbar-nav > li > a:focus {
+  background-color:#63A8C9;
+}
+
+.navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a:hover,.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a:hover,.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color:#F3C738;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,.navbar-inverse .navbar-nav > li > a:focus {
+  color:#FFF;
+}
+
+.navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a:hover,.navbar-inverse .navbar-nav > .open > a:focus {
+  color:#221E1E;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > .active > a:focus {
+  color:#FFF;
+}
+
+/*```````````````````````````````````````````````
+Body
+```````````````````````````````````````````````*/
+.bumper {
+  height:50px;
+}
+
+.portrait {
+  margin:1em 0;
+  border-radius:10px;
+}
+
+.panel {
+  background-color:#63A8C9;
+}
+
+.panel-heading {
+  padding:.1em 0;
+}
+
+.section {
+  color:#555;
+  margin-top:90px;
+  padding:1em;
+  background-color:rgba(255, 255, 255, .5);
+}
+
+.logo {
+  margin:0;
+  padding:0;
+}
+
+iframe {
+  margin:0;
+  border:2px solid #63A8C9;
+}
+
+img.bg {
+  min-height:100%;
+  min-width:1024px;
+  width:100%;
+  height:auto;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:0;
+}
+
+@media screen and (max-width:1024px) { /* Specific to bg image size */
+  img.bg {
+    left:50%;
+    margin-left:-512px;   /* 50% max-width screen */
+  }
+}
+
+/*```````````````````````````````````````````````
+Footer
+```````````````````````````````````````````````*/
+
+#legal {
+  color:#FFF;
+}
+
+footer .container .well {
+  background-color:#63A8C9;
+  margin-top:1em;
+}

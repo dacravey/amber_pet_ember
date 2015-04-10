@@ -1,0 +1,32 @@
+<h2>Add a pet:</h2>
+
+<form>
+  <div class="form-group" enctype="multipart/form-data">
+    <label for="name">Name:</label>
+    {{input name="name" value=name type="text" placeholder="Pet Name" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="age">Estimated Age:</label>
+    {{input name="age" value=age type="text" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="breed">Breed</label>
+    {{input name="breed" value=breed type="text" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="chip_number">Chip number</label>
+    {{input name="chip_number" value=chip_number type="text" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="description">Description</label>
+    {{input name="description" value=description type="text" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="picture">Pet photo</label>
+    {{input name="picture" value=picture type="text" class="form-control"}}
+  </div>
+
+  <div class="text-center">
+    <button class="btn btn-info" {{action 'createPet'}}>Submit</button>
+  </div>
+</form>
