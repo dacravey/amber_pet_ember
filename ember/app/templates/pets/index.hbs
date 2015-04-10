@@ -7,7 +7,9 @@
         <p class="panel-title"><small>{{link-to name 'pets.show' this}}</small></p>
       </div>
       <div class="panel-body">
-        <!-- for images here, add class="pet-icons" -->
+        {{#link-to 'pets.show' this}}
+          <img {{ bind-attr src = picture }} class="pet-icons" alt="pets">
+        {{/link-to}}
       </div>
     </div>
   </div>
