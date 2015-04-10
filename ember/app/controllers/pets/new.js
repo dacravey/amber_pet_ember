@@ -8,7 +8,7 @@ export default Ember.ArrayController.extend ({
       var age = this.get("age");
       var description = this.get("description");
       var chipNumber = this.get("chip_number");
-      var avatar = this.get("avatar");
+      var picture = this.get("picture");
 
       var pet = this.store.createRecord('pet', {
         name: name,
@@ -16,7 +16,7 @@ export default Ember.ArrayController.extend ({
         age: age,
         description: description,
         chip_number: chipNumber,
-        avatar: avatar
+        picture: picture
       });
 
       this.set('name', "");
@@ -24,6 +24,7 @@ export default Ember.ArrayController.extend ({
       this.set('description', "");
       this.set('breed', "");
       this.set('chip_number', "");
+      this.set('picture', "");
       pet.save();
       this.transitionToRoute('pets');
 
