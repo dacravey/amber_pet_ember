@@ -13,18 +13,18 @@
 * [Jake Kaad](https://github.com/JakeKaad)
 
 
-AmberPet is a local pet registry that connects people who lose or find a missing animal companion and helps to facilitate a safe return home. It provides the ability to report an animal as lost or found, provide the user's contact info, location information, and a photo of the animal. The app comes with Twilio functionality that will send a text message to alert users of new lost and found reports if connected to a functioning Twilio account, much like the national Amber Alerts have done for missing children. Amber Pet uses the Google Maps API to display the reported animals within a given area.
+AmberPet is a local pet registry that connects people who lose or find a missing animal companion and helps to facilitate a safe return home. It provides the ability to report an animal as lost or found, provides the user's contact info, location information, and a photo of the animal for purposes of reunions with lost pets. The app comes with opt-in Twilio functionality that will send a text message to alert users of new lost and found reports (if it is connected to a functioning Twilio account), much like the national Amber Alerts have done for missing children. Amber Pet uses the Google Maps API to display the reported animals within a given area.
 
 
 ## Requirements
 
-Rails
-Rails-CSRF
-Ember-CLI
-Ember-CLI-Pretender (for testing)
-Ember-CLI-Simple-Auth
-Ember-CLI-Simple_Auth-Devise
-Node & npm
+* Rails
+* Rails-CSRF
+* Ember-CLI
+* Ember-CLI-Pretender (for testing)
+* Ember-CLI-Simple-Auth
+* Ember-CLI-Simple_Auth-Devise
+* Node & npm
 
 NOTE: Twilio credentials should be stored in a .env file in order to keep them secure.
 
