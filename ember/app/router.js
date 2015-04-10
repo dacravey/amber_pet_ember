@@ -7,8 +7,11 @@ var Router = Ember.Router.extend({
 
 export default Router.map(function() {
   this.resource('pets', function() {
-    this.route('index');
+    this.route('index', {path: '../pets'});
     this.route('show', {path: ':pet_id'});
     this.route('new', {path: 'new'});
   });
+  this.resource('login', function() {
+    this.route('login');
+  })
 });
