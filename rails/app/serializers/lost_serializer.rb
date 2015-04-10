@@ -1,3 +1,3 @@
 class LostSerializer < ActiveModel::Serializer
-  attributes :address, :date, :time
+  attributes :id, :address, :date, :time, :pet_id
 end
