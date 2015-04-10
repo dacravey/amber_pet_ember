@@ -2,12 +2,12 @@ import Ember from "ember";
 
 export default Ember.ArrayController.extend ({
   actions: {
-    createLost: function() {
+    createFinding: function() {
       var address = this.get("address");
       var time = this.get("time");
       var date = this.get("date");
 
-      var lost = this.store.createRecord('lost', {
+      var finding = this.store.createRecord('finding', {
         address: address,
         time: time,
         date: date
@@ -16,7 +16,7 @@ export default Ember.ArrayController.extend ({
       this.set('address', "");
       this.set('time', "");
       this.set('date', "");
-      lost.save();
+      finding.save();
       this.transitionToRoute('pets');
 
     }

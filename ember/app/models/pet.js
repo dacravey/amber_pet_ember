@@ -6,5 +6,5 @@ export default DS.Model.extend({
   breed: DS.attr('string'),
   chip_number: DS.attr('string'),
   age: DS.attr('string'),
-  avatar: DS.attr('string')
+  picture: DS.attr('string')
 });
