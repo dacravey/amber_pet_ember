@@ -10,6 +10,15 @@ html, body {
   font-family:'Oswald', sans-serif;
 }
 
+h1, h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 3em;
+}
+
+h1, h2, h3 {
+  margin: 0.5em;
+}
+
 /*```````````````````````````````````````````````
 Navigation
 ```````````````````````````````````````````````*/
@@ -45,7 +54,7 @@ Navigation
 }
 
 .navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a:hover,.navbar-inverse .navbar-nav > .open > a:focus {
-  color:#FFF;
+  color:#221E1E;
 }
 
 .navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > .active > a:focus {
@@ -55,10 +64,10 @@ Navigation
 /*```````````````````````````````````````````````
 Body
 ```````````````````````````````````````````````*/
-.pet-icons {
-  background-color:#AAA;
-  border-radius:15px;
+.panel-heading {
+  padding: .1em 0;
 }
+
 .section {
   color: #555;
   margin-top: 90px;
@@ -67,7 +76,8 @@ Body
 }
 
 .logo {
-  max-width: 81px;
+  margin: 0;
+  padding: 0;
 }
 
 iframe {

@@ -3,5 +3,14 @@
 
 
 {{#each}}
-  <div class="col-md-2 pet-icons">{{link-to name 'pets.show' this}}</div>
+  <div class="col-md-3 text-center">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <p class="panel-title"><small>{{link-to name 'pets.show' this}}</small></p>
+      </div>
+      <div class="panel-body">
+        Pic Here
+      </div>
+    </div>
+  </div>
 {{/each}}
