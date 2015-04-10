@@ -23,5 +23,5 @@ export default Router.map(function() {
   });
   this.resource('login', function() {
     this.route('login');
-  })
+  });
 });
