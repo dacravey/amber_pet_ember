@@ -1,6 +1,11 @@
-{{link-to 'New' 'losts.new'}}
-<h2>Lost Pets &mdash; <small>Lend a hand!</small></h2>
+<h2>Lost Pets <small>Lend a hand!</small></h2>
 
 {{#each}}
-<div class="col-md-2 pet-icons">{{link-to address 'losts.show' this}}</div>
+  <div class="col-md-2 pet-icons">{{link-to address 'losts.show' this}}</div>
 {{/each}}
+
+<div class="text-center">
+  {{#link-to 'losts.new'}}
+    <button class="btn btn-info">Report a Lost Pet!</button>
+  {{/link-to}}
+</div>
