@@ -78,6 +78,10 @@ Body
   border-radius:10px;
 }
 
+.panel {
+  background-color:#63A8C9;
+}
+
 .panel-heading {
   padding:.1em 0;
 }
