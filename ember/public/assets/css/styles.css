@@ -10,6 +10,20 @@ html, body {
   font-family:'Oswald', sans-serif;
 }
 
+h1, h2 {
+  font-family:'Lobster', cursive;
+  font-size:3em;
+}
+
+h2 > small {
+  font-family:'Oswald', sans-serif;
+  font-size:.5em;
+}
+
+h1, h2, h3 {
+  margin:0.5em 0;
+}
+
 /*```````````````````````````````````````````````
 Navigation
 ```````````````````````````````````````````````*/
@@ -45,7 +59,7 @@ Navigation
 }
 
 .navbar-inverse .navbar-nav > .active > a,.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a:hover,.navbar-inverse .navbar-nav > .open > a:focus {
-  color:#FFF;
+  color:#221E1E;
 }
 
 .navbar-inverse .navbar-nav > .active > a:hover,.navbar-inverse .navbar-nav > .active > a:focus {
@@ -55,24 +69,34 @@ Navigation
 /*```````````````````````````````````````````````
 Body
 ```````````````````````````````````````````````*/
-.pet-icons {
-  background-color:#AAA;
-  border-radius:15px;
+.bumper {
+  height:50px;
 }
+
+.portrait {
+  margin:1em 0;
+  border-radius:10px;
+}
+
+.panel-heading {
+  padding:.1em 0;
+}
+
 .section {
-  color: #555;
-  margin-top: 90px;
-  padding: 1em;
+  color:#555;
+  margin-top:90px;
+  padding:1em;
   background-color:rgba(255, 255, 255, .5);
 }
 
 .logo {
-  max-width: 81px;
+  margin:0;
+  padding:0;
 }
 
 iframe {
   margin:0;
-  border: 2px solid #63A8C9;
+  border:2px solid #63A8C9;
 }
 
 img.bg {
